@@ -25,6 +25,7 @@ footer a{
 	padding-top:12px;
 }
 #banner{
+	position: relative;
 	background:url(../images/topbanner.jpg) repeat-x top;
 	height:176px;
 	width:100%;
@@ -168,4 +169,19 @@ a:active {
 }
 ul{
 	line-height:20px;
+}
+#printable_banner {
+	text-decoration: none;
+  display: block;
+  position: absolute;
+  top:-4px;
+  right: 16px;
+  z-index: 10;
+  padding: 10px 20px 10px 20px;
+  color: #fff;
+  background: #0aaed1 no-repeat 95% 50%;
+  font-size: 14px;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
