@@ -278,7 +278,7 @@ Full-Width Styles
   margin: 0 auto;
 }
 
-#resume_banner {
+#resume_link {
   display: block;
   position: absolute;
   top: 0;
@@ -292,6 +292,24 @@ Full-Width Styles
   box-shadow: 0 0 10px rgba(0,0,0,.5);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+}
+
+#resume_banner {
+  padding: 10px;
+  margin: 0 auto;
+  color: #fff;
+  /*width: 50%;*/
+  background:  #0090ff no-repeat 90% 50%;
+  font-weight: 700;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  text-align: center;
+}
+
+#resume_banner a {
+  color: white;
 }
 
 #header_wrap {
