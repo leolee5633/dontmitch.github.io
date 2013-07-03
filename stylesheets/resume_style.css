@@ -130,9 +130,18 @@ h3 {
 }
 
 .highlight-project {
+	position: relative;
 	text-align: left;
 	width: 90%;
 	margin-bottom: 15px;
+	border-radius: 5px;
+	background: url(../images/topbanner.jpg) repeat-x bottom;
+}
+.highlight-project .featured {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	color: black;
 }
 .highlight-project img {
 	vertical-align: top;
