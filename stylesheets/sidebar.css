@@ -38,6 +38,12 @@ body {
 	color: #FFF;
 }
 
+.meny img {
+  padding: 0;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,.8);
+  box-shadow: 0 0 10px rgba(0,0,0,.8);
+}
+
 /**
  * Hint graphic that appears while menu is inactive
  */
