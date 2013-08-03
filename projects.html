@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="stylesheets/index.css">
     <link rel="stylesheet" href="stylesheets/sidebar.css">
+    <link rel="stylesheet" href="stylesheets/projects.css">
 
     <title>Mitch Lee - Projects</title>
   </head>
@@ -41,6 +42,35 @@
       <div id="main_content_wrap" class="outer">
         <section id="main_content" class="inner">
 
+          <h3><a name="my-projects" class="anchor" href="#my-projects"><span class="octicon octicon-link"></span></a>My Projects</h3>
+
+          <div class="banner">
+            <ul>
+              <li>
+                <a href="http://groupact.me" target="_blank"><img src="images/groupact.png" alt="grouPACT" draggable="false" width="180" height="120"/></a>
+                <p><a href="https://github.com/dontmitch/group_planning" target="_blank" class="btn">grouPACT</a><br /> a Rails based web application using algorithmic background jobs, mailer integration and Stripe payment processing</p>
+              </li>
+
+              <li>
+                <a href="http://platypuscards.herokuapp.com/" target="_blank"><img src="images/flashcards.png" alt="Flash Cards" draggable="false" width="166" height="110"/></a>
+                <p><a href="https://github.com/dontmitch/web_flash_cards" target="_blank" class="btn">Flash Cards</a><br /> a simple web based flash cards platform using Sinatra, AJAX and advanced CSS animations</p>
+              </li>
+
+              <li>
+                <a href="https://github.com/dontmitch/intro_to_rails" target="_blank"><img src="images/intro_to_rails.png" alt="Intro to Rails" draggable="false" width="166" height="110"/></a>
+                <p><a href="https://github.com/dontmitch/intro_to_rails" target="_blank" class="btn">Intro to Rails</a><br /> a Rails tutorial for aspiring web developers</p>
+              </li>
+              <li>
+                <a href="https://github.com/dontmitch/" target="_blank"><img src="images/github.png" alt="My GitHub" draggable="false" width="166" height="110"/></a>
+                <p><a href="https://github.com/dontmitch/" target="_blank" class="btn">GitHub</a><br /> my public GitHub page, featuring a wide variety of my past and current projects</p>
+              </li>
+            </ul>
+          </div>
+
+        </section>
+
+        <section id="main_content" class="inner">
+
           <h3><a name="my-skills" class="anchor" href="#my-skills"><span class="octicon octicon-link"></span></a>My Skills</h3>
 
           <p>By the time you're reading this, I'm sure that I will have dramatically expanded upon my knowledge of one or more of these, if not added more to the list. However, here is a list of my current specialties:</p>
@@ -49,7 +79,9 @@
           <a name="ruby--rails--javascript--jquery--css--html" class="anchor" href="#ruby--rails--javascript--jquery--css--html"><span class="octicon octicon-link"></span></a>Ruby | Rails | JavaScript | jQuery | CSS | HTML | GitHub</h5>
 
         </section>
+
       </div>
+
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
@@ -60,5 +92,15 @@
   </div>
   <script src="javascripts/meny.min.js"></script>
   <script src="javascripts/application.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://unslider.com/unslider.min.js"></script>
+  <script>
+    $( function() {
+      $('.banner').unslider({
+        dots: true
+        // fluid: true
+      })
+    });
+  </script>
   </body>
 </html>
