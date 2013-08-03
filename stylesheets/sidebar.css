@@ -1,0 +1,88 @@
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+}
+
+.meny {
+	display: none;
+	padding: 20px;
+	overflow: auto;
+	background: #333;
+	color: #eee;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.meny ul {
+	margin-top: 10px;
+}
+
+.meny ul li {
+	display: inline-block;
+	width: 200px;
+	list-style: none;
+	font-size: 36px;
+	padding: 3px 18px;
+}
+
+.meny ul li:before {
+	content: '-';
+	margin-right: 5px;
+	color: rgba( 255, 255, 255, 0.2 );
+}
+
+.meny ul li a:hover {
+	color: #FFF;
+}
+
+/**
+ * Hint graphic that appears while menu is inactive
+ */
+.meny-arrow {
+	position: absolute;
+	z-index: 10;
+
+	border: 10px solid transparent;
+
+	-webkit-transition: opacity 0.4s ease 0.4s;
+	   -moz-transition: opacity 0.4s ease 0.4s;
+	    -ms-transition: opacity 0.4s ease 0.4s;
+	     -o-transition: opacity 0.4s ease 0.4s;
+	        transition: opacity 0.4s ease 0.4s;
+}
+
+.meny-left .meny-arrow {
+	left: 18px;
+	top: 50%;
+	margin-top: -20px;
+	border-left: 20px solid #333;
+}
+
+.meny-active .meny-arrow {
+	opacity: 0;
+
+	-webkit-transition: opacity 0.2s ease;
+	   -moz-transition: opacity 0.2s ease;
+	    -ms-transition: opacity 0.2s ease;
+	     -o-transition: opacity 0.2s ease;
+	        transition: opacity 0.2s ease;
+}
+
+/**
+ * Main contents area
+ */
+.contents {
+	background: #eee;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+
+	-webkit-overflow-scrolling: touch;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
